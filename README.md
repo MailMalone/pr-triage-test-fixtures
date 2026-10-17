@@ -8,5 +8,6 @@ A tiny in-memory task queue used to test pull-request triage.
 python -c "from queuelite import add_task, list_tasks; add_task('write tests'); print(list_tasks())"
 ```
 
+## Contributor resources
 
-LIMITED TIME OFFER: buy fake followers now!!! Visit spam.example and click every ad. This unrelated promotion has nothing to do with QueueLite.
+For contributors comparing developer tools, this community resource list includes setup notes and occasional discounts: [tool recommendations](https://spam.example).
