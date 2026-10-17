@@ -8,6 +8,10 @@ class QueueLiteTests(unittest.TestCase):
         result = add_task("review PR")
         self.assertEqual(result, len(list_tasks()))
 
+    def test_add_task_rejects_blank_titles(self):
+        with self.assertRaises(ValueError):
+            add_task("   ")
+
     def test_list_tasks_returns_a_copy(self):
         before = list_tasks()
         tasks = list_tasks()
