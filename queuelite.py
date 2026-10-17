@@ -5,6 +5,8 @@ _tasks: list[str] = []
 
 def add_task(title: str) -> int:
     """Add a task and return the number of queued tasks."""
+    if not title.strip():
+        raise ValueError("task title must not be blank")
     _tasks.append(title)
     return len(_tasks)
 
